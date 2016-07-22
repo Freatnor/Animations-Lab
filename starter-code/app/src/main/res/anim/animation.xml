@@ -1,11 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:shareInterpolator="false"
     android:fillAfter="false" >
   <alpha
-      <!--TODO: finish fading animation-->
-      />
+         android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+         android:duration="400"
+         android:fromAlpha="1.0"
+         android:toAlpha="0.0"/>
 
   <rotate
-  <!--TODO: finish rotating animation-->
-    />
+      android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+      android:duration="400"
+      android:fillAfter="true"
+      android:fromDegrees="0"
+      android:toDegrees="360"
+      android:pivotX="25%"
+      android:pivotY="25%" />
 </set>
